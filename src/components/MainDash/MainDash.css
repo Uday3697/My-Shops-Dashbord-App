@@ -10,3 +10,10 @@
    }
     
   }
+
+  @media screen and (max-width:768px){
+    .MainDash{
+        align-items: center;
+    }
+     
+   }
