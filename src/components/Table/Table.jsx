@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css"
-// import { red } from "@mui/material/colors";
+import { makeStyles } from "@mui/material";
 
 
 function createData(name,trackingId,date,status,details) {
@@ -26,8 +26,8 @@ export default function BasicTable() {
   const makeStyles=(status)=>{
     if(status==='Approved'){
       return {
-        background:'rgb(145 254 159 /47%)',
-        color:'green'
+        background:"#79f0f0448",
+        color:'#22910787'
       }
     }
     else if(status==='Pending'){
@@ -73,7 +73,7 @@ export default function BasicTable() {
                 <TableCell align="left">{row.trackingId}</TableCell>
                 <TableCell align="left">{row.date}</TableCell>
                 <TableCell align="left">
-                  <span className="status" styles={makeStyles(row.status)}>{row.status} </span>
+                  <span className="status-list" styles={makeStyles(row.status)}>{row.status} </span>
                 </TableCell>
                 <TableCell align="left" className="Details">{row.details}</TableCell>
     

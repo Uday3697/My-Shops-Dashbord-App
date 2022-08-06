@@ -10,7 +10,7 @@
 .Table:first-child{
     border-radius: 0.7rem !important;
 }
-.status{
+.status-list{
     padding:8px ;
     border-radius: 9px;
 }
