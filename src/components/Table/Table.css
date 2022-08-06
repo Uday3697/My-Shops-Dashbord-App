@@ -17,3 +17,10 @@
 .Details{
     color: aqua !important;
 }
+@media screen and (max-width:1200px){
+    .Table{
+        width: 170%;
+        margin-top: 2rem;
+    }
+    
+  }
